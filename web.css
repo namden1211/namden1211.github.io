@@ -1,0 +1,284 @@
+.dangky{
+    width: 1600px;
+    height: 2500px;
+    background-color: white;
+}
+.c{
+    width: 1300px;
+    height: 650px;
+    margin-left: 120px;
+    margin-top: 1px;
+}
+.d{
+    width: 1300px;
+    height: 100px;
+    margin-left: 120px;
+    margin-top: 1px;
+    padding-top: 15px;
+}
+.e{
+    width: 1300px;
+    height: 370px;
+    margin-left: 120px;
+    margin-top: 1px;
+   
+}
+.g{
+    width: 345px;
+    height: 370px;
+    background-color: rgb(240, 122, 122);
+}
+.h{
+    width: 310px;
+    height: 370px;
+    margin-left: 60px;
+}
+.f{
+    width: 575px;
+    height: 270px;
+    background-color: rgb(240, 122, 122);
+    padding-top: 30px;
+}
+.j{
+    width: 555px;
+    height: 100px;
+    background-color: rgb(240, 122, 122);
+    padding-top: 35px;
+}
+.k{
+    width: 310px;
+    height: 116px;
+}
+.i{
+    width: 345px;
+    height: 350px;
+    background-color: rgb(10, 177, 83);
+}
+.p{
+    width: 575px;
+    height: 350px;
+    background-color: rgb(10, 177, 83);
+    padding-top: 30px;
+}
+.t{
+    width: 575px;
+    height: 80px;
+    background-color: rgb(10, 177, 83);
+}
+.anhto{
+    max-width: 800px;
+    height: 400px;
+    float: left;
+
+}
+.anhbe{
+    max-width: 306px;
+    height: 200px;
+    float: left;
+    margin-top: 2px;
+}
+.anhbe1{
+    max-width: 430px;
+    height: 200px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.bovien{
+    width: 500px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 20px;;
+}
+.bosopping{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid  #087B44;
+}
+.dangnhap{
+    margin-top: 10px;
+}
+.mucsach{
+    width: 215px;
+    height: 600px;
+   border: 1px solid black;
+   
+}
+.dangnhap1{
+    width: 500px;
+    height: 410px;
+    border: 1px solid black;
+    margin-top: 150px;
+    margin-left: 500px;
+    background-color: white;
+    border-radius: 5px;
+}
+.dn{
+    width: 698px;
+    height: 70px;
+    margin-top: 1px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    background-color: #087B44;
+}
+.anhfb{
+    width: 200px;
+    height: 35px;
+}
+
+.dk1{
+    width: 1600px;
+    height: 130px;
+    margin-top: 10px;
+    padding-top: 42px;
+}
+.dk2{
+    width: 1600px;
+    height: 50px;
+    background-color:  #087B44;
+    border: 1px solid black;
+}
+.dk3{
+    width: 1600px;
+    height: 70px;
+    background-color: white;
+    padding-top: 50px;
+}
+.dk4{
+    width: 1600px;
+    height: 100px;
+    background-color: white;
+    padding-top: 10px;
+}
+.dk5{
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 120px;
+    border-radius: 10px;
+}
+.dk6{
+    width: 284px;
+    height: 498px;
+    background-color: #c3c1b8;
+    margin-left: 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.dk7{
+    width: 1600px;
+    height: 100px;
+    background-color: #087B44;
+    border: 1px;
+    padding-top: 10px;
+}
+.dk8{
+    width: 1600px;
+    height: 120px;
+    background-color: white;
+}
+.dk9{
+    width: 1600px;
+    height: 70px;
+    background-color: white;
+}
+.gh1{
+    width: 1600px;
+    height: 100px;
+    margin-top: 10px;
+}
+.gh2{
+    width: 1600px;
+    height: 50px;
+    margin-top: 2px;
+    padding-top: 20px;
+}
+.sale{
+    width: 60px;
+    height: 30px;
+    background-color: rgb(236, 9, 9);
+    border-radius: 7px;
+    padding-top: 5px;
+}
+.chitiet1{
+    width: 1600px;
+    height: 50px;
+    padding-top: 30px;
+}
+.chitiet2{
+    width: 1600px;
+    height: 500px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+.chitiet3{  
+    width: 270px;
+    height: 300px;
+    border: 7px solid darkgrey;
+    border-radius: 3px;
+    margin-left: 50px;
+}
+.chitiet4{
+    width: 1600px;
+    height: 500px;
+}
+.chitiet5{
+    width: 1600px;
+    height: 200px;
+}
+.chitiet7{
+    width: 500px;
+    height: 190px;
+    margin-top: 5px;
+    border: 1px solid rgb(198, 197, 197);
+    margin-left: 150px;
+    padding-top: 25px;
+}.danhmuc{
+    width: 1600px;
+    height: 2000px;
+}
+.giohang{
+    width: 1600px;
+    height: 600px;
+}
+.gh3{
+    width: 700px;
+    height: 160px;
+    margin-left: 200px;
+    border-radius: 3px;
+}
+.gh4{
+    width: 700px;
+    height: 50px;
+    margin-left: 200px;
+}
+.anhgh{
+    width: 60px;
+    height: 70px;
+}
+.gh5{
+    width: 350px;
+    height: 200px;
+    border: 1px solid rgb(207, 204, 204);
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 3px;
+}
+.gh6{
+    width: 1600px;
+    height: 100px;
+    margin-top: 200px;
+}
+.hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+

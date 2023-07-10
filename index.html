@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Đọc Sách</title>
+    <link rel="stylesheet" href="web.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="app">
+    <div class="dangky">
+        <div class="dk1">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="index.html"><img src="anh/vina.png"
+                            style="margin-top: 7px; margin-left: 80px;"></a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="bovien" style="margin-top: 5px;margin-left: 55px;">
+                        <i class="fa fa-search" style="font-size: 30px; margin-left: 5px; margin-top: 1px;"></i>
+                        <label for="tim"></label>
+                        <input type="text" id="tim" placeholder="tìm kiếm tựa sách, tác giả"
+                            style="width: 300px; margin-left: 10px; border:white;" v-on:keyup.enter="goto_search()">
+                        <input type="submit" value="Tìm sách"
+                            style="background-color:  #087B44; color: white; margin-left: 35px; width: 100px; height: 30px;"
+                            class="bovien" v-on:click="goto_search()">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="bosopping" style="margin-left: 50px;">
+                        <a href="giohang.html"><i class="fa fa-shopping-cart"
+                                style="font-size: 30px;margin-top: 8px; margin-left:8px;color: #087B44;"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="dangnhap">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                          Đăng nhập |
+                          </button>
+                        
+
+                          <div class="modal fade" id="myModal" >
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                              
+                              
+                                <div class="modal-header">
+                                    <div class="dn">
+                                        <span style="color: white; font-size: 17px; margin-left: 20px;">Đăng nhập</span>
+                                        </div>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                
+                                <div class="modal-body" style="padding-left: 180px;">
+                                    <span>
+                                        <label for="he">Email*</label>
+                                        <input type="text" id="he" style="margin-left: 10px; width: 250px; height: 35px; border-radius: 7px; margin-left: 40px;" >
+                                        <span><br>
+                                            <label for="hi" style="margin-top: 20px;">Mật khẩu*</label>
+                                            <input type="text" id="hi" style="margin-left: 10px; width: 250px;height: 35px; border-radius: 7px;"><br>
+                                        </span>
+                                        <span>
+                                        <input type="checkbox" id="ki" style="margin-top: 20px; margin-left: 30px;">
+                                        <label for="ki">Ghi nhớ thông tin</label>
+                                        <input type="submit" value="Quên mật khẩu?" style="margin-left: 40px;"><br><br>
+                                         </span>
+                                    
+                                        
+                                
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#my" style="margin-left: 90px;">Đăng nhập</button>
+                       
+                    <div class="modal" id="my">
+                        <div class="modal-dialog-centered " style="width: 500px;margin-left: 500px;">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #087B44;">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <span style="color: #087B44;font-size: 20px;margin-left: 120px;">Đăng nhập thành công</span>
+                                  </div>
+                                  <div class="modal-footer" style="height: 30px;">
+                                  </div>
+    
+
+                            </div>
+                        </div>
+                    </div>
+    
+                                <span style="margin-top: 30px;margin-left:30px;">Chưa có tài khoản vui lòng
+                                <a href="dangky.html">Đăng ký</a></span>
+                                    
+                         </div>
+                                
+                                
+                         <div class="modal-footer" style="background-color: beige;">
+                                    
+                                  <a href="https://vi-vn.facebook.com/"><img src="anh/fb.png" class="anhfb" style=" margin-right: 300px;"></a>
+                                    
+                         </div>
+                          
+                         </div>
+                         </div>
+                      </div>
+                     <a href="dangky.html" style="color: black;">Đăng ký</a>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dk2 row">
+            <div class="col-sm-3">
+                <span>
+                    <i class="fa fa-bars"
+                        style="font-size: 25px; color: white; margin-top: 8px; margin-left: 140px;"></i>
+                </span>
+                <span style="margin-left: 15px; margin-bottom: 6px; font-size: 18px; color: white;"> Danh Mục Sách
+                </span>
+            </div>
+            <div class="col-sm-9">
+                <span>
+                    <i class="fa fa-phone"
+                        style="color: white; margin-left: 650px;margin-top: 8px;font-size: 25px;"></i>
+                </span>
+                <span style="color: white;">hotline: 1900 6401</span>
+                <span style="color: white; font-size: 20px;margin-left: 4px;">|</span>
+                <span>
+                    <i class="fa fa-support" style="color: white; margin-left: 4px;"></i>
+                </span>
+                <span style="color: white;margin-left: 2px;">hỗ trợ trực tuyến</span>
+            </div>
+        </div>
+
+        <div class="c row" style="margin-left: 120px;">
+            <div class="col-sm-2">
+                <div class="mucsach">
+                    <input type="submit" value="Sách bán chạy"
+                        style="width: 213px;height: 38px;border-top:1px ;margin-top: 1px;">
+                    <input type="submit" value="Sách mới phát hành"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách sắp phát hành"
+                        style="width: 213px;height:38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách ngoại văn"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách blockchain"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách kinh tế"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách văn học trong nước"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách văn học nước ngoài"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách thường thức - đời sống"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách thiếu nhi"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách phát triển bản thân"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách tin học ngoại ngữ"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách chuyên ngành"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="Sách giáo khoa - giáo trình"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                    <input type="submit" value="tạp chí - văn phòng phẩm"
+                        style="width: 213px;height: 38px;border-top:1px;margin-top: 2px;">
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <a href="chitiet1.html">
+                    <img src="anh/3.jpg" class="anhto">
+                </a>
+                <a href="chitiet2.html">
+                    <img src="anh/5.jpg" class="anhbe">
+                </a>
+                <a href="chitiet3.html">
+                    <img src="anh/6.jpg" class="anhbe">
+                </a>
+                <a href="chitiet4.html">
+                    <img src="anh/4.jpg" class="anhbe1">
+                </a>
+                <a href="chitiet5.html">
+                    <img src="anh/8.jpg" class="anhbe1">
+                </a>
+                <a href="chitiet6.html">
+                    <img src="anh/7.jpg" class="anhbe1">
+                </a>
+            </div>
+        </div>
+        <div class="d row" style="margin-left: 120px;">
+            <div class="col-sm-8">
+                <span style="font-size: 20px;">Sách Mới Hay</span>
+            </div>
+            <div class="col-sm-4">
+                <span style="font-size: 20px; margin-left: 80px;">Sách Bán Chạy Trong Tuần</span>
+            </div>
+        </div>
+        <div class="e row" style="margin-left: 120px;">
+            <div class="col-sm-3">
+                <div class="g">
+                    <a href="chitiet7.html"> <img src="anh/chimphuonhhoang.jpg"
+                            style="margin-left: 25px;margin-top: 35px;"></a>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="f">
+                    <a href="chitiet7.html">
+                        <span style="font-size: 20px; color: white; "> Bách Khoa Toàn Thư Content: Đại Biểu
+                            Mẫu</span><br>
+                    </a>
+                    <span style="color: white;  text-decoration: underline; ">Nhiều tác giả</span><br><br>
+                    <span style="color: white; ">Bạn thân mến, Bạn đang sống trong một thời đại mà khi khép mắt vào,
+                        điều còn đọng lại trong đầu bạn có khi không phải là những lời thì thầm chúc ngủ ngon, mà là lời
+                        lẽ mời gọi từ một chiếc email bạn nhận được lúc nửa đêm. Và khi mở mắt ra, điều đầu tiên bạn
+                        nhìn thấy có thể không phải là một gương mặt của người thân quen, hay của chính mình trong
+                        gương. Đó có thể là những dòng tin trên chiếc điện thoại của bạn, một hình ảnh trên mạng xã hội,
+                        một vài video quảng cáo, một clip Tiktok vui nhộn… Vâng, đúng thế. Chào ngày mới, chúng ta đang
+                        sống...</span>
+                    <hr>
+                </div>
+                <div class="j row" style="margin-left: 20px;">
+                    <div class="col-sm-2">
+                        <div class="sale">
+                            <p style="color: white; margin-left: 13px; ">-10%</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <p style="color: white;font-size: 18px; margin-top: 4px;"><del>1.200.000đ</del></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p style="color: white;font-size: 20px; margin-top: 2px; margin-left: 13px;">1.080.000đ</p>
+                    </div>
+                    <div class="col-sm-5">
+                        
+
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myi" style="margin-left: 50px;">Mua ngay</button>
+                       
+                <div class="modal" id="myi">
+                    <div class="modal-dialog-centered " style="width: 500px;margin-left: 500px;">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: #087B44;">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                              <div class="modal-body">
+                                <span style="color: #087B44;font-size: 20px;margin-left: 120px;">Đã thêm vào giỏ hàng</span>
+                              </div>
+                              <div class="modal-footer" style="height: 30px;">
+                              </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="h">
+                    <div class="k row">
+                        <div class="col-sm-4">
+                            <a href="chitiet8.html">
+                                <img src="anh/concho.jpg" style="width: 65px;margin-top: 2px; margin-left: 6px;">
+                            </a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="chitiet8.html">
+                                <span style="color: #087B44;">Con chó nhỏ mang giỏ hoa hồng(Bìa mềm)</span><br>
+                            </a>
+                            <span style="color: darkgray;">Nguyễn Nhật Ánh</span><br>
+                            <i class="fa fa-star" style="color: gold;"></i><i class="fa fa-star"
+                                style="color: gold;"></i><i class="fa fa-star" style="color: gold;"></i><i
+                                class="fa fa-star" style="color: gold;"></i><i class="fa fa-star"
+                                style="color: gold;"></i><br>
+                            <span style="color: darkgrey;"><del>90.000đ</del></span>
+                            <span style="color: crimson; font-size: 18px;">63.000đ</span>
+                        </div>
+                    </div>
+                    <div class="k row">
+                        <div class="col-sm-4">
+                            <a href="chitiet9.html">
+                                <img src="anh/lucky.jpg" style="width: 65px;margin-top: 2px; margin-left: 6px;">
+                            </a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="chitiet9.html">
+                                <span style="color: #087B44;">Combo lucky luke - Bộ 4 Tập(Số ngẫu nhiên)</span><br>
+                            </a>
+                            <span style="color: darkgray;">First new</span><br>
+                            <i class="fa fa-star" style="color: gold;"></i><i class="fa fa-star"
+                                style="color: gold;"></i><i class="fa fa-star" style="color: gold;"></i><i
+                                class="fa fa-star" style="color: gold;"></i><i class="fa fa-star"
+                                style="color: gold;"></i><br>
+                            <span style="color: darkgrey;"><del>106.800đ</del></span>
+                            <span style="color: crimson; font-size: 18px;">74.760đ</span>
+                        </div>
+                    </div>
+                    <div class="k row">
+                        <div class="col-sm-4">
+                            <a href="chitiet10.html">
+                                <img src="anh/caychuoi.jpg" style="width: 65px;margin-top: 2px; margin-left: 6px;">
+                            </a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="chitiet10.html">
+                                <span style="color: #087B44;">Cây chuối non đi giày xanh(Bìa mềm)</span><br>
+                            </a>
+                            <span style="color: darkgray;">Nguyễn Nhật Ánh</span><br>
+                            <i class="fa fa-star" style="color: gold;"></i><i class="fa fa-star"
+                                style="color: gold;"></i><i class="fa fa-star" style="color: gold;"></i><i
+                                class="fa fa-star" style="color: gold;"></i><i class="fa fa-star"
+                                style="color: gold;"></i><br>
+                            <span style="color: darkgrey;"><del>110.000đ</del></span>
+                            <span style="color: crimson; font-size: 18px;">77.000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d row" style="margin-left: 120px;">
+            <div class="col-sm-8">
+                <span style="font-size: 20px;">Sách Hay</span>
+            </div>
+            <div class="col-sm-4">
+                <span style="font-size: 20px;margin-left: 80px;">Báo chí giới thiệu</span>
+            </div>
+        </div>
+
+
+        <div class="e row" style="margin-left: 120px;">
+            <div class="col-sm-3">
+                <div class="i">
+                    <a href="chitiet11.html">
+                        <img src="anh/tapchi.jpg" style="margin-left: 25px;margin-top: 35px;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="p">
+                    <a href="chitiet11.html">
+                        <span style="font-size: 20px; color: white; "> Tạp chí Forbes - Số 115 (Tháng 3/2023)</span><br>
+                    </a>
+                    <span style="color: white;  text-decoration: underline; ">Nhiều tác giả</span><br><br>
+                    <span style="color: white; ">Điểm Chạm Khách Hàng Để trả lời cho câu hỏi sau đại dịch COVID-19 chân
+                        dung của người tiêu dùng đã thay đổi như thế nào, NielsenIQ đã tiến hành nhiều khảo sát với
+                        những nhóm khách hàng khác nhau. Kết quả cho thấy hành vi khách hàng đã có sự thay đổi đáng kể
+                        so với trước khi dịch bệnh bùng phát. Chân dung mới của khách hàng được phác thảo: Họ cân nhắc
+                        kỹ lưỡng về yếu tố thương hiệu sản phẩm song song với yếu tố sức khỏe và bền vững. Do tâm lý bất
+                        an về vấn đề tài chính, người tiêu dùng quan tâm so sánh công năng của sản phẩm với số tiền bỏ
+                        ra...</span><br>
+                        <span style="color:white; margin-left: 170px;">95.000đ</span>
+                       
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#mya" style="margin-left: 170px;">Mua ngay</button>
+                       
+                    <div class="modal" id="mya">
+                        <div class="modal-dialog-centered " style="width: 500px;margin-left: 500px;">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #087B44;">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <span style="color: #087B44;font-size: 20px;margin-left: 120px;">Đã thêm vào giỏ hàng</span>
+                                  </div>
+                                  <div class="modal-footer" style="height: 30px;">
+                                  </div>
+    
+    
+    
+    
+    
+    
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="h">
+                    <div class="k row">
+                        <div class="col-sm-4">
+                            <a href="chitiet12.html">
+                                <img src="anh/nguoikep.jpg" style="width: 65px;margin-top: 2px; margin-left: 6px;">
+                            </a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="chitiet12.html">
+                                <span style="color: #087B44;">Người kép già</span><br>
+                            </a>
+                            <span style="color: darkgray;">Thành Chương</span><br>
+                            <span style="color: darkgrey;"><del>360.000đ</del></span>
+                            <span style="color: crimson; font-size: 18px;">306.000đ</span>
+                        </div>
+                    </div>
+                    <div class="k row">
+                        <div class="col-sm-4">
+                            <a href="chitiet13.html">
+                                <img src="anh/conchim.jpg" style="width: 65px;margin-top: 2px; margin-left: 6px;">
+                            </a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="chitiet13.html">
+                                <span style="color: #087B44;">Con Chim Xanh Biếc Bay Về(Bìa cứng)</span><br>
+                            </a>
+                            <span style="color: darkgray;">Nguyễn Nhật Ánh</span><br>
+                            <span style="color: darkgrey;"><del>270.000đ</del></span>
+                            <span style="color: crimson; font-size: 18px;">202.000đ</span>
+                        </div>
+                    </div>
+                    <div class="k row">
+                        <div class="col-sm-4">
+                            <a href="chitiet14.html">
+                                <img src="anh/toasang.jpg" style="width: 65px;margin-top: 2px; margin-left: 6px;">
+                            </a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="chitiet14.html">
+                                <span style="color: #087B44;">Tỏa sáng - Jessica Jung</span><br>
+                            </a>
+                            <span style="color: darkgray;">Jessica Jung</span><br>
+                            <span style="color: darkgrey;"><del>95.000đ</del></span>
+                            <span style="color: crimson; font-size: 18px;">72.000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dk9"></div>
+        <div class="dk7 row">
+            <div class="col-sm-4">
+                <span style="color: white;">
+                    <h3 style="margin-left: 150px;">ĐĂNG KÝ NHẬN EMAIL</h3>
+                </span>
+                <span>
+                    <h5 style="margin-left: 150px; color: white;">Đăng ký thông tin sách mới, sách bán</h5>
+                </span>
+            </div>
+            <div class="col-sm-2">
+                <span>
+                    <input type="text" placeholder="Tên của bạn"
+                        style="margin-top: 25px; width: 200px;height: 35px; border-radius: 8px; border: hidden;">
+                </span>
+            </div>
+            <div class="col-sm-2">
+                <span>
+                    <input type="text" placeholder="Nhập email của bạn"
+                        style="margin-top: 25px; width: 200px;height: 35px; border-radius: 8px; border: hidden;">
+                </span>
+            </div>
+            <div class="col-sm-4">
+                <span>
+                    <a href="dangky.html">
+                        <input type="submit" value="ĐĂNG KÝ NGAY"
+                            style="margin-top: 25px; width: 200px;height: 35px; border-radius: 8px; border: hidden; color: #087B44;">
+                    </a>
+                </span>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="web.js"></script>
+
+</html>
