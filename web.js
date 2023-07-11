@@ -22,13 +22,16 @@ const app = Vue.createApp({
             search: [
                
             ],
-            chi_tiet: { "ten_sach": "Tạp chí Forbes-Số 116(Tháng 4/2023)", "tac_gia": "nhiều tác giả", "nha_xuat_ban": "Forbes Vietnam", "nha_phat_hanh": "Forbes Vietnam","noi_dung_tt": "Thế hệ sinh sau năm 1970, lớn lên khi đất nước hòa bình, được tiếp cận và thừa hưởng nền giáo dục mới, và trưởng thành trong điều kiện đất nước mở cửa có nhiều điểm khác biệt với cha anh. Họ mang đầu óc rộng mở, sớm tiếp cận các tư ...", "khoi_luong": "400.00gam","dinh_dang":"bìa mềm", "ngay_phat_hanh":"04/2023","noi_dung":"Thế hệ sinh sau năm 1970, lớn lên khi đất nước hòa bình, được tiếp cận và thừa hưởng nền giáo dục mới, và trưởng thành trong điều kiện đất nước mở cửa có nhiều điểm khác biệt với cha anh. Họ mang đầu óc rộng mở, sớm tiếp cận các tư tưởng quản trị hiện đại, “tắm mình” trong dòng chảy vô tận của xa lộ thông tin khi nền công nghiệp Internet bùng nổ, được truyền cảm hứng bởi các câu chuyện thành công của thế giới.Đó là thế hệ doanh nhân hứa hẹn có thể tạo ra thay đổi mang tính đột phá tiếp theo của nền kinh tế Việt Nam dựa trên nhiều yếu tố: khai thác thị trường toàn cầu, tận dụng sức mạnh từ công nghệ, tiên phong đột phá trong các lĩnh vực mới mẻ."}
+            chi_tiet: { "ten_sach": "Tạp chí Forbes-Số 116(Tháng 4/2023)", "tac_gia": "nhiều tác giả", "nha_xuat_ban": "Forbes Vietnam", "nha_phat_hanh": "Forbes Vietnam","noi_dung_tt": "Thế hệ sinh sau năm 1970, lớn lên khi đất nước hòa bình, được tiếp cận và thừa hưởng nền giáo dục mới, và trưởng thành trong điều kiện đất nước mở cửa có nhiều điểm khác biệt với cha anh. Họ mang đầu óc rộng mở, sớm tiếp cận các tư ...", "khoi_luong": "400.00gam","dinh_dang":"bìa mềm", "ngay_phat_hanh":"04/2023","noi_dung":"Thế hệ sinh sau năm 1970, lớn lên khi đất nước hòa bình, được tiếp cận và thừa hưởng nền giáo dục mới, và trưởng thành trong điều kiện đất nước mở cửa có nhiều điểm khác biệt với cha anh. Họ mang đầu óc rộng mở, sớm tiếp cận các tư tưởng quản trị hiện đại, “tắm mình” trong dòng chảy vô tận của xa lộ thông tin khi nền công nghiệp Internet bùng nổ, được truyền cảm hứng bởi các câu chuyện thành công của thế giới.Đó là thế hệ doanh nhân hứa hẹn có thể tạo ra thay đổi mang tính đột phá tiếp theo của nền kinh tế Việt Nam dựa trên nhiều yếu tố: khai thác thị trường toàn cầu, tận dụng sức mạnh từ công nghệ, tiên phong đột phá trong các lĩnh vực mới mẻ."},
+            carts: [
+                { "numb": 3, "id": 1, "ten_sach": "Những đứa trẻ thông minh nhất thế giới", "tac_gia": "Amanda Ripley", "ngay_xuat_ban": 2005, "nha_xuat_ban": "NXB Dân chí", "anh_bia": "anh/376246_nhung-dua-tre-thong-minh-nhat-the-gioi.jpg", "noi_dung_tt":"Những đứa trẻ thông minh nhất thế giới không phải là cuốn sách viết về những thiên tài hay thần đồng nhỏ tuổi nào đó, mà đây là cuốn sách xây dựng nên hình ảnh của những đứa trẻ đó – từ những con người rất bình thường. Với lối ...","noi_dung":"Thế hệ sinh sau năm 1970, lớn lên khi đất nước hòa bình, được tiếp cận và thừa hưởng nền giáo dục mới, và trưởng thành trong điều kiện đất nước mở cửa có nhiều điểm khác biệt với cha anh. Họ mang đầu óc rộng mở, sớm tiếp cận các tư tưởng quản trị hiện đại, “tắm mình” trong dòng chảy vô tận của xa lộ thông tin khi nền công nghiệp Internet bùng nổ, được truyền cảm hứng bởi các câu chuyện thành công của thế giới.Đó là thế hệ doanh nhân hứa hẹn có thể tạo ra thay đổi mang tính đột phá tiếp theo của nền kinh tế Việt Nam dựa trên nhiều yếu tố: khai thác thị trường toàn cầu, tận dụng sức mạnh từ công nghệ, tiên phong đột phá trong các lĩnh vực mới mẻ."},
+                { "numb": 5, "id": 2, "ten_sach": "Giáo dục con bằng phương pháp của INAMORI", "tac_gia": "Kazou Inamori", "nam_xuat_ban": 2005, "nha_xuat_ban": "NBX Công Thương", "anh_bia": "anh/376199_giao-duc-con-bang-phuong-phap-cua-inamori.jpg", "noi_dung_tt":"Những đứa trẻ thông minh nhất thế giới không phải là cuốn sách viết về những thiên tài hay thần đồng nhỏ tuổi nào đó, mà đây là cuốn sách xây dựng nên hình ảnh của những đứa trẻ đó – từ những con người rất bình thường. Với lối ...","noi_dung":"Thế hệ sinh sau năm 1970, lớn lên khi đất nước hòa bình, được tiếp cận và thừa hưởng nền giáo dục mới, và trưởng thành trong điều kiện đất nước mở cửa có nhiều điểm khác biệt với cha anh. Họ mang đầu óc rộng mở, sớm tiếp cận các tư tưởng quản trị hiện đại, “tắm mình” trong dòng chảy vô tận của xa lộ thông tin khi nền công nghiệp Internet bùng nổ, được truyền cảm hứng bởi các câu chuyện thành công của thế giới.Đó là thế hệ doanh nhân hứa hẹn có thể tạo ra thay đổi mang tính đột phá tiếp theo của nền kinh tế Việt Nam dựa trên nhiều yếu tố: khai thác thị trường toàn cầu, tận dụng sức mạnh từ công nghệ, tiên phong đột phá trong các lĩnh vực mới mẻ." }
+            ]
 
 
 
         }
-    }
-    ,
+    },
     methods: {
         tim_kiem() {
             this.search = [];
@@ -42,7 +45,7 @@ const app = Vue.createApp({
             // todo loc
            for (let i = 0; i < this.books.length; i++ ){
                 if(this.books[i]["ten_sach"].match(tu_khoa)) {
-                    this.search.push(this.books[i])
+                    this.search.push(this.books[i]);
                 }
            }
         },
